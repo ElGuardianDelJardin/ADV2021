@@ -9,10 +9,7 @@ public class waterSplash : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Instantiate(SplashInPrefab, collision.ClosestPointOnBounds(collision.attachedRigidbody.position),Quaternion.identity);
-    }
-    private void OnTriggerExit(Collider collision)
-    {
-        Instantiate(SplashOutPrefab, collision.ClosestPointOnBounds(collision.attachedRigidbody.position), Quaternion.identity);
+        if(collision.gameObject.tag != "Limb")
+            Instantiate(SplashInPrefab, collision.ClosestPointOnBounds(collision.attachedRigidbody.position),Quaternion.identity);
     }
 }

@@ -8703,7 +8703,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 0.433
-  sharedProfile: {fileID: 11400000, guid: 10fc4df2da32a41aaa32d77bc913491c, type: 2}
+  sharedProfile: {fileID: 11400000, guid: c090fca73e947bd4b8cf081f069b7631, type: 2}
 --- !u!95 &1119828709
 Animator:
   serializedVersion: 3
@@ -13969,7 +13969,7 @@ PrefabInstance:
     - target: {fileID: 2168976252407219861, guid: ab705c12998b91549a606c41673244e6,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab705c12998b91549a606c41673244e6, type: 3}
@@ -19305,7 +19305,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1382190584
 Transform:
@@ -20124,7 +20124,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.427451, g: 0.454902, b: 0.5372549, a: 1}
-  m_Intensity: 21.27
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -21824,7 +21824,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!95 &1986289303981676
 Animator:
@@ -22232,10 +22232,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4855338733698071010, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855338734946870990, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855338735659241837, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132417973118999082, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132417973746397861, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5132417973853051261, guid: e23458855620bcc4fa3547e617520d67,
         type: 3}
       propertyPath: m_Name
       value: cofre
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132417974357050630, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5508415097886147527, guid: e23458855620bcc4fa3547e617520d67,
         type: 3}
@@ -22290,6 +22320,16 @@ PrefabInstance:
     - target: {fileID: 5508415097886147527, guid: e23458855620bcc4fa3547e617520d67,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188697185704878574, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188697187150560962, guid: e23458855620bcc4fa3547e617520d67,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
