@@ -4,50 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Trigger : MonoBehaviour
 {
-    public Animator objectToAnimate;
-    public string animatorVariable;
+    public GameObject[] Enable;
+    public GameObject[] Disable;
 
-    public Text texto;
+    public int MinScore;
 
-    private bool open;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" || other.tag == "MainCamera")
+        if (other.tag == "Player")
         {
-            objectToAnimate.SetBool("Trigger", true);
-            
+            for (int i = 0; i < Enable.Length; i++)
+                Enable[i].SetActive(true);
+
+            for (int i = 0; i < Disable.Length; i++)
+                Disable[i].SetActive(false);
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player" || other.tag == "MainCamera")
-            objectToAnimate.SetBool(animatorVariable, open);
-
-        if (objectToAnimate.GetBool(animatorVariable)) {
-            if (texto)
-                texto.text = "press Space to close chest"; }
-        else {
-            if (texto)
-                texto.text = "press Space to open chest"; }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player" || other.tag == "MainCamera")
-        {
-            objectToAnimate.SetBool(animatorVariable, false);
-            objectToAnimate.SetBool("Trigger", false);
-            if(texto)
-            texto.text = "";
-
-
-        }
-    }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            open = !open;
+        if(GameManager.GetScore() >= MinScore) 
+        {
+            gameObject.GetComponent<BoxCollider>().enabled = true;
+        }
     }
-
 }

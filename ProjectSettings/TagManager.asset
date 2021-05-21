@@ -7,6 +7,9 @@ TagManager:
   - Shootable
   - rock
   - Limb
+  - Damage
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -19,8 +22,8 @@ TagManager:
   - Lighting
   - Ground
   - Postprocessing
-  - 
-  - 
+  - InvisibleWalls
+  - Bullet
   - 
   - 
   - 

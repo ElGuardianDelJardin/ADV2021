@@ -87,6 +87,7 @@ namespace DigitalRuby.RainMaker
                 WindZone.gameObject.SetActive(true);
                 if (FollowCamera)
                 {
+
                     WindZone.transform.position = Camera.transform.position;
                 }
                 if (!Camera.orthographic)
@@ -274,7 +275,7 @@ namespace DigitalRuby.RainMaker
 
         protected virtual void Update()
         {
-
+            
 #if DEBUG
 
             if (RainFallParticleSystem == null)
